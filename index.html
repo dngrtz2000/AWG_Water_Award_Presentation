@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community AWG Initiative — MBR Global Water Award Proposal</title>
+  <meta name="description" content="A Solar-Hybrid, Community-Owned Model for Climate-Resilient Drinking Water in Central Luzon, Philippines. Proposal for the Mohammed bin Rashid Al Maktoum Global Water Award 2026.">
+  <style>
+    :root {
+      --primary: #0a4d68;
+      --primary-light: #088395;
+      --accent: #05bfdb;
+      --dark: #1a1a2e;
+      --text: #2d3436;
+      --text-light: #636e72;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --success: #00b894;
+      --shadow: 0 4px 20px rgba(10, 77, 104, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* Header */
+    .hero {
+      background: linear-gradient(135deg, #0a4d68 0%, #088395 50%, #05bfdb 100%);
+      color: white;
+      padding: 3.5rem 1.5rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .subtitle {
+      font-size: 1.15rem;
+      opacity: 0.95;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      max-width: 700px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .meta-item {
+      font-size: 0.9rem;
+    }
+
+    .meta-item strong {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.8;
+      margin-bottom: 0.2rem;
+    }
+
+    /* Navigation */
+    .nav-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      gap: 0.25rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    nav a {
+      flex-shrink: 0;
+      padding: 0.9rem 1rem;
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--primary);
+      border-bottom-color: var(--accent);
+    }
+
+    /* Main content */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+      scroll-margin-top: 4rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid var(--accent);
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: var(--primary-light);
+      margin: 1.75rem 0 0.75rem;
+    }
+
+    h4 {
+      font-size: 1.05rem;
+      color: var(--dark);
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      margin: 0.75rem 0 1.25rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #e8f4f8 0%, #f0f9ff 100%);
+      border-left: 4px solid var(--primary-light);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 10px 10px 0;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Tables */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 1.25rem 0 1.75rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      font-size: 0.92rem;
+    }
+
+    thead {
+      background: var(--primary);
+      color: white;
+    }
+
+    th {
+      padding: 0.85rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    tbody tr:hover {
+      background: #eef7fa;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      font-style: italic;
+      margin-top: -0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 1.35rem;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(10, 77, 104, 0.12);
+    }
+
+    .card h4 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      color: var(--text-light);
+    }
+
+    .metric-value {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary-light);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 1.75rem;
+      margin: 1.5rem 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 8px;
+      bottom: 8px;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--primary), var(--accent));
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.5rem;
+      background: var(--white);
+      padding: 1rem 1.25rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.55rem;
+      top: 1.15rem;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      border: 3px solid var(--white);
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+
+    .timeline-item strong {
+      color: var(--primary);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-phase {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--primary-light);
+      margin-bottom: 0.15rem;
+    }
+
+    /* SDG badges */
+    .sdg-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1rem 0;
+    }
+
+    .sdg-badge {
+      background: var(--primary);
+      color: white;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* Risk table accent */
+    .risk-mitigation {
+      color: var(--success);
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.85);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    footer .footer-content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 0.75rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Back to top */
+    .back-to-top {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: var(--primary);
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(10, 77, 104, 0.3);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      font-size: 1.2rem;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Print */
+    @media print {
+      .nav-wrapper, .back-to-top { display: none; }
+      .hero { padding: 1.5rem; }
+      section { break-inside: avoid; }
+    }
+
+    @media (max-width: 600px) {
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+      h2 {
+        font-size: 1.35rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <div class="hero-content">
+      <div class="badge">Proposal Submission · 2026 Cycle</div>
+      <h1>Community Atmospheric Water Generator (AWG) Initiative</h1>
+      <p class="subtitle">A Solar-Hybrid, Community-Owned Model for Climate-Resilient Drinking Water in Central Luzon, Philippines</p>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Submitted by</strong>
+          Romualdo Romeo Ortiz
+        </div>
+        <div class="meta-item">
+          <strong>Contact</strong>
+          dngrtz2000@gmail.com · +63 997 561 3730
+        </div>
+        <div class="meta-item">
+          <strong>Location</strong>
+          Central Luzon, Republic of the Philippines
+        </div>
+        <div class="meta-item">
+          <strong>Category</strong>
+          Community Water Solutions
+        </div>
+        <div class="meta-item">
+          <strong>Date</strong>
+          21 July 2026
+        </div>
+        <div class="meta-item">
+          <strong>Award</strong>
+          MBR Global Water Award
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <div class="nav-wrapper">
+    <nav>
+      <a href="#executive-summary">Executive Summary</a>
+      <a href="#context">Context</a>
+      <a href="#objectives">Objectives</a>
+      <a href="#alignment">Alignment</a>
+      <a href="#methodology">Methodology</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#technical">Technical</a>
+      <a href="#monitoring">Monitoring</a>
+      <a href="#budget">Budget</a>
+      <a href="#impact">Impact</a>
+      <a href="#environment">Environment</a>
+      <a href="#risks">Risks</a>
+      <a href="#governance">Governance</a>
+      <a href="#outcomes">Outcomes</a>
+      <a href="#conclusion">Conclusion</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- 1. Executive Summary -->
+    <section id="executive-summary">
+      <h2>1. Executive Summary</h2>
+      <p>Central Luzon’s barangay communities face a recurring paradox: some of the highest ambient humidity levels in Southeast Asia sit alongside chronic gaps in safe drinking water — gaps that widen every time a typhoon damages a pipeline or a dry spell drains a shallow well. This proposal presents a community-scale Atmospheric Water Generator (AWG) program designed to convert that humidity into a dependable, decentralized source of potable water — independent of the grid failures, contamination risks, and seasonal shocks that undermine conventional supply.</p>
+      <div class="highlight-box">
+        <p>The pilot will deploy solar-hybrid AWG units across a single barangay, producing up to <strong>5,000 liters of WHO-standard drinking water per day</strong> for approximately <strong>200 households (~1,000 residents)</strong>. Each unit draws moisture directly from the air, filters and mineralizes it to potable quality, and reports performance in real time through IoT monitoring — giving both the community and funders continuous visibility into output, energy use, and water quality.</p>
+      </div>
+      <p>Beyond the pilot barangay, the model is built to travel. Its modular design, cooperative ownership structure, and transparent cost-per-liter economics make it directly replicable across the thousands of similarly humid, similarly underserved communities that span the Philippine archipelago and much of tropical Southeast Asia. This is precisely the profile the Mohammed bin Rashid Al Maktoum Global Water Award was created to recognize and scale: a technically sound, financially disciplined, community-anchored answer to water scarcity.</p>
+      <p>With MBR Water Award support, this initiative will move from a fully specified pilot to a proven, replicable reference model — one that pairs climate resilience with tangible gains in public health, education, gender equity, and local economic opportunity.</p>
+    </section>
+
+    <!-- 2. Context -->
+    <section id="context">
+      <h2>2. Context and Problem Statement</h2>
+      <p>Central Luzon is one of the Philippines’ most agriculturally productive and densely populated regions, yet many of its barangays remain dependent on shallow groundwater and aging municipal pipelines that are increasingly unreliable. Two compounding pressures drive the water insecurity this project addresses:</p>
+      <ul>
+        <li><strong>Climate volatility:</strong> The region sits directly in the typical typhoon corridor and experiences a pronounced dry season; both extremes disrupt piped supply and accelerate reliance on unsafe informal sources.</li>
+        <li><strong>Infrastructure fragility:</strong> Municipal systems in many barangays were not engineered for current population density, resulting in intermittent service, pressure loss, and contamination risk during and after storm events.</li>
+      </ul>
+      <p>At the same time, Central Luzon’s average relative humidity of <strong>70–90%</strong> and warm year-round temperatures (<strong>25–34°C</strong>) create ideal physical conditions for atmospheric water generation — a resource the region is uniquely positioned to exploit but has not yet adopted at community scale. This proposal closes that gap.</p>
+    </section>
+
+    <!-- 3. Objectives -->
+    <section id="objectives">
+      <h2>3. Project Objectives</h2>
+      <p>The pilot is built around five measurable objectives:</p>
+      <ul>
+        <li>Deliver safe, WHO-standard drinking water to 200 families (~1,000 people) in the pilot barangay.</li>
+        <li>Reduce community dependence on vulnerable groundwater and municipal supply.</li>
+        <li>Demonstrate the technical and economic feasibility of AWG deployment in humid tropical climates, generating a validated reference case for replication.</li>
+        <li>Integrate renewable energy to minimize operating costs and environmental impact.</li>
+        <li>Build local capacity and cooperative ownership so operations remain sustainable beyond the initial funding period.</li>
+      </ul>
+    </section>
+
+    <!-- 4. Alignment -->
+    <section id="alignment">
+      <h2>4. Alignment with the MBR Water Award and Global Goals</h2>
+      <p>This project was designed against the criteria the MBR Water Award weighs most heavily: innovation, sustainability, scalability, and measurable social impact.</p>
+
+      <h3>4.1 Innovation</h3>
+      <p>Solar-hybrid atmospheric water generation, tuned specifically for humid tropical conditions and paired with IoT-based transparency, is a comparatively underused approach in Southeast Asia despite favorable climate conditions — positioning this pilot as a genuine technology demonstrator rather than a repackaged conventional water project.</p>
+
+      <h3>4.2 Sustainability</h3>
+      <p>Solar-hybrid power reduces both operating cost and carbon footprint; cooperative ownership and local operator training are built in from day one rather than added as an afterthought, giving the system a realistic path to operate without continued donor subsidy.</p>
+
+      <h3>4.3 Scalability</h3>
+      <p>The modular unit design and transparent, falling cost-per-liter economics allow replication across additional barangays, schools, and hospitals with minimal redesign, and the same architecture applies across other humid tropical geographies well beyond the Philippines.</p>
+
+      <h3>4.4 Contribution to the UN Sustainable Development Goals</h3>
+      <div class="sdg-list">
+        <span class="sdg-badge">SDG 6 — Clean Water</span>
+        <span class="sdg-badge">SDG 7 — Clean Energy</span>
+        <span class="sdg-badge">SDG 3 — Good Health</span>
+        <span class="sdg-badge">SDG 5 — Gender Equality</span>
+        <span class="sdg-badge">SDG 11 & 13 — Climate Action</span>
+      </div>
+      <ul>
+        <li><strong>SDG 6</strong> — Clean Water and Sanitation: direct, measurable increase in safe drinking water access.</li>
+        <li><strong>SDG 7</strong> — Affordable and Clean Energy: solar-hybrid power reduces both cost and emissions.</li>
+        <li><strong>SDG 3</strong> — Good Health and Well-Being: reduced waterborne disease burden.</li>
+        <li><strong>SDG 5</strong> — Gender Equality: reduced water-fetching burden on women and girls.</li>
+        <li><strong>SDG 11 & 13</strong> — Sustainable Communities and Climate Action: disaster-resilient water access during typhoons and droughts.</li>
+      </ul>
+    </section>
+
+    <!-- 5. Methodology -->
+    <section id="methodology">
+      <h2>5. Methodology</h2>
+      <p>The project deploys modular AWG units, each producing 500–800 liters of water per day, powered by an integrated solar-hybrid system that reduces reliance on grid electricity. Extracted water passes through a multi-stage filtration and mineralization process to meet WHO drinking water standards before distribution.</p>
+      <p>Implementation follows a staged rollout designed to de-risk the technology before it is extended to critical facilities:</p>
+      <ul>
+        <li><strong>Phase 1</strong> — Pilot barangay installation of 5–10 units with full IoT monitoring.</li>
+        <li><strong>Phase 2</strong> — Operator training, cooperative formation, and a monitored 12-month operating period.</li>
+        <li><strong>Phase 3</strong> — Expansion to schools and hospitals within the same municipality.</li>
+        <li><strong>Phase 4</strong> — Documented replication package for additional barangays and partner regions.</li>
+      </ul>
+      <p>Local operators are trained in maintenance, filter replacement, and day-to-day monitoring, while IoT-enabled sensors continuously track water output, energy consumption, and water quality — creating an auditable performance record for the community, local government, and the Award committee alike.</p>
+    </section>
+
+    <!-- 6. Timeline -->
+    <section id="timeline">
+      <h2>6. Implementation Timeline</h2>
+      <p>The pilot is planned as a <strong>30-month program</strong>, structured to prove performance before scaling and to generate a fully documented replication package by close.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-phase">Phase 1 · Months 1–3</span>
+          <strong>Mobilization</strong>
+          Site selection, community agreements, procurement, unit installation (5–10 units)
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-phase">Phase 2 · Months 4–5</span>
+          <strong>Commissioning</strong>
+          System calibration, water quality certification, IoT dashboard go-live
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-phase">Phase 3 · Months 5–6</span>
+          <strong>Operator Training</strong>
+          Cooperative formation, operator and youth training, women’s committee inclusion
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-phase">Phase 4 · Months 6–18</span>
+          <strong>Monitored Operations</strong>
+          Full daily operations, quarterly maintenance cycle, performance reporting
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-phase">Phase 5 · Months 18–24</span>
+          <strong>Expansion</strong>
+          Extension to schools and hospitals; evacuation-center portable units
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-phase">Phase 6 · Months 24–30</span>
+          <strong>Replication Package</strong>
+          Case study, cost model, and toolkit for additional barangays
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Technical Annex -->
+    <section id="technical">
+      <h2>7. Technical Annex</h2>
+
+      <h3>7.1 Unit Specifications</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Specification</th><th>Detail</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Daily output capacity</td><td>500–800 liters/day per unit</td></tr>
+            <tr><td>Water quality</td><td>Distilled, mineralized post-processing to WHO drinking water standards</td></tr>
+            <tr><td>Filtration system</td><td>Multi-stage: carbon, UV, mineral cartridge</td></tr>
+            <tr><td>Expected lifespan</td><td>10–15 years</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>7.2 Energy Profile</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Parameter</th><th>Detail</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Power source</td><td>Solar-hybrid system</td></tr>
+            <tr><td>Energy consumption</td><td>0.3–0.5 kWh per liter produced</td></tr>
+            <tr><td>Solar integration</td><td>5–10 kW solar array per unit</td></tr>
+            <tr><td>Operating cost estimate</td><td>₱300,000 per year (fleet-level)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>7.3 Climate Suitability</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Parameter</th><th>Detail</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Target region</td><td>Central Luzon, Philippines</td></tr>
+            <tr><td>Average humidity</td><td>70–90%</td></tr>
+            <tr><td>Temperature range</td><td>25–34°C</td></tr>
+            <tr><td>Resilience profile</td><td>Rated for reliable operation during typhoons and droughts</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>7.4 Deployment and Maintenance</h3>
+      <ul>
+        <li><strong>Installation:</strong> pilot barangay deployment of 5–10 units.</li>
+        <li><strong>Maintenance:</strong> quarterly filter replacement and an annual full system check-up.</li>
+        <li><strong>Local training:</strong> barangay operators trained for routine upkeep and first-line troubleshooting.</li>
+        <li><strong>Monitoring:</strong> IoT dashboard tracking water output and quality in real time.</li>
+      </ul>
+
+      <h3>7.5 Performance Metrics</h3>
+      <div class="card-grid">
+        <div class="card">
+          <span class="metric-value">5,000 L</span>
+          <h4>Daily Output (Fleet)</h4>
+          <p>Target production capacity across all units</p>
+        </div>
+        <div class="card">
+          <span class="metric-value">₱2–₱3</span>
+          <h4>Cost per Liter</h4>
+          <p>Competitive with bottled water (₱20–25)</p>
+        </div>
+        <div class="card">
+          <span class="metric-value">40–60%</span>
+          <h4>Carbon Reduction</h4>
+          <p>vs. grid-only AWG systems</p>
+        </div>
+        <div class="card">
+          <span class="metric-value">20,000 L</span>
+          <h4>Scalability Ceiling</h4>
+          <p>With this configuration</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Monitoring -->
+    <section id="monitoring">
+      <h2>8. Monitoring, Evaluation and Learning Framework</h2>
+      <p>Performance will be tracked continuously through the IoT dashboard and validated through periodic community surveys, ensuring both the Award committee and local stakeholders can independently verify progress against target outcomes.</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Indicator</th>
+              <th>Baseline</th>
+              <th>Target (Month 18)</th>
+              <th>Data Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Households with daily access to AWG water</td>
+              <td>0</td>
+              <td>200 families</td>
+              <td>IoT usage logs, cooperative registry</td>
+            </tr>
+            <tr>
+              <td>Daily water output</td>
+              <td>0 L/day</td>
+              <td>5,000 L/day</td>
+              <td>IoT dashboard</td>
+            </tr>
+            <tr>
+              <td>Incidence of waterborne illness (pilot barangay)</td>
+              <td>Baseline survey, Month 0</td>
+              <td>30–40% reduction</td>
+              <td>Barangay health center records</td>
+            </tr>
+            <tr>
+              <td>School attendance (pilot schools, Phase 3)</td>
+              <td>Baseline survey, Month 0</td>
+              <td>20% improvement</td>
+              <td>School administration records</td>
+            </tr>
+            <tr>
+              <td>Residents trained in AWG operation/maintenance</td>
+              <td>0</td>
+              <td>50+</td>
+              <td>Training attendance records</td>
+            </tr>
+            <tr>
+              <td>Water availability during declared disasters</td>
+              <td>Intermittent</td>
+              <td>100%</td>
+              <td>Incident logs, cooperative reporting</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Data will be reviewed quarterly by the cooperative management committee, with an annual report shared with the local government unit and, where applicable, the Award committee.</p>
+    </section>
+
+    <!-- 9. Budget -->
+    <section id="budget">
+      <h2>9. Budget and Financial Sustainability</h2>
+
+      <h3>9.1 Capital and Operating Costs</h3>
+      <ul>
+        <li><strong>Capital costs:</strong> ₱5,000,000–₱7,000,000 for pilot deployment (equipment, solar integration, installation).</li>
+        <li><strong>Operating costs:</strong> ₱300,000 per year for maintenance, filters, and training.</li>
+        <li><strong>Funding model:</strong> a combination of MBR Water Award grant funding, local government support, and cooperative contributions.</li>
+        <li><strong>Revenue streams:</strong> minimal user fees or cooperative membership dues to sustain operations.</li>
+        <li><strong>Scalability:</strong> unit costs decrease with bulk procurement and shared infrastructure as the program expands to additional barangays.</li>
+      </ul>
+
+      <h3>9.2 Profit and Loss Projection</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Year 1</th>
+              <th>Year 2</th>
+              <th>Year 3</th>
+              <th>Years 4–5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Revenue</td>
+              <td>₱0.5M</td>
+              <td>₱1.2M</td>
+              <td>₱2.0M</td>
+              <td>₱3.5M</td>
+            </tr>
+            <tr>
+              <td>Operating costs</td>
+              <td>₱0.3M</td>
+              <td>₱0.35M</td>
+              <td>₱0.4M</td>
+              <td>₱0.45M</td>
+            </tr>
+            <tr>
+              <td>Maintenance &amp; training</td>
+              <td>₱0.1M</td>
+              <td>₱0.15M</td>
+              <td>₱0.2M</td>
+              <td>₱0.25M</td>
+            </tr>
+            <tr>
+              <td><strong>Net profit / (loss)</strong></td>
+              <td><strong>₱0.1M</strong></td>
+              <td><strong>₱0.7M</strong></td>
+              <td><strong>₱1.4M</strong></td>
+              <td><strong>₱2.8M</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Note: Revenue includes cooperative contributions, minimal user fees, and government support. Costs reflect filter replacement, solar upkeep, and operator training.</p>
+
+      <h3>9.3 Cash Flow Outlook</h3>
+      <ul>
+        <li><strong>Year 1:</strong> negative cash flow, reflecting the initial capital investment of ₱5M–₱7M.</li>
+        <li><strong>Year 2:</strong> break-even, driven by cooperative contributions and lower relative operating costs as usage scales.</li>
+        <li><strong>Years 3–5:</strong> positive and stabilizing cash flow as revenue matures and maintenance costs remain predictable.</li>
+        <li><strong>Long-term:</strong> surplus reinvested into expansion units for schools and hospitals.</li>
+      </ul>
+
+      <h3>9.4 Balance Sheet Summary</h3>
+      <ul>
+        <li><strong>Assets:</strong> AWG units, solar arrays, and IoT monitoring systems.</li>
+        <li><strong>Liabilities:</strong> minimal, primarily short-term maintenance contracts.</li>
+        <li><strong>Equity:</strong> community cooperative ownership, supported by award funding and local government partnership.</li>
+      </ul>
+
+      <h3>9.5 Cost-per-Liter Analysis</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Basis</th><th>Cost</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Capital cost per liter (5,000 L/day output)</td><td>₱2–₱3</td></tr>
+            <tr><td>Operating cost per liter (energy + maintenance)</td><td>₱0.50–₱1.00</td></tr>
+            <tr><td>Bottled water market comparison</td><td>₱20–₱25 per liter</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">The AWG program is competitive with bottled water on cost and materially safer than untreated groundwater — with costs projected to fall further at scale.</p>
+
+      <h3>9.6 Funding and Sustainability Model</h3>
+      <ul>
+        <li><strong>Initial funding:</strong> MBR Water Award grant plus local government co-investment.</li>
+        <li><strong>Community contributions:</strong> cooperative membership fees of approximately ₱50–₱100 per household per month.</li>
+        <li><strong>Revenue streams:</strong> household drinking-water distribution, supply contracts to schools and hospitals, and potential longer-term expansion into local bottled-water markets.</li>
+        <li><strong>Scalability:</strong> profits reinvested into additional units, extending coverage to multi-barangay clusters.</li>
+      </ul>
+
+      <h3>9.7 Risk and Sensitivity Analysis</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Risk</th><th>Mitigation</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Revenue risk: lower-than-projected household contributions</td>
+              <td>Government subsidy layer; tiered membership fee structure</td>
+            </tr>
+            <tr>
+              <td>Cost risk: rising energy prices</td>
+              <td>Solar-hybrid integration decouples the system from grid tariffs</td>
+            </tr>
+            <tr>
+              <td>Climate risk: reduced humidity in dry season</td>
+              <td>Modular redundancy and buffer storage tanks</td>
+            </tr>
+            <tr>
+              <td>Financial sensitivity</td>
+              <td>Break-even is achievable at 70% of projected household contributions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 10. Social Impact -->
+    <section id="impact">
+      <h2>10. Social and Community Impact</h2>
+
+      <h3>10.1 Health Outcomes</h3>
+      <ul>
+        <li><strong>Safe drinking water:</strong> 5,000 liters/day for approximately 1,000 residents.</li>
+        <li><strong>Disease reduction:</strong> lower incidence of waterborne illness.</li>
+        <li><strong>Nutrition support:</strong> improved food preparation and household hygiene.</li>
+        <li><strong>Healthcare facilities:</strong> reliable supply for hospitals and clinics.</li>
+      </ul>
+
+      <h3>10.2 Education Benefits</h3>
+      <ul>
+        <li><strong>School access:</strong> reliable water for students and teachers.</li>
+        <li><strong>Awareness programs:</strong> sustainability education integrated into the school curriculum.</li>
+        <li><strong>Gender equity:</strong> reduced burden on women and children who currently fetch water.</li>
+        <li><strong>Community training:</strong> youth trained in AWG maintenance.</li>
+      </ul>
+
+      <h3>10.3 Disaster Resilience</h3>
+      <ul>
+        <li><strong>Typhoon preparedness:</strong> AWGs continue operating when pipelines fail.</li>
+        <li><strong>Drought mitigation:</strong> reliable supply through the dry season.</li>
+        <li><strong>Emergency response:</strong> portable units deployable to evacuation centers.</li>
+        <li><strong>Community safety net:</strong> cooperative ownership ensures fair, transparent distribution.</li>
+      </ul>
+
+      <h3>10.4 Social Empowerment</h3>
+      <ul>
+        <li><strong>Community ownership:</strong> a cooperative model fosters long-term sustainability.</li>
+        <li><strong>Local employment:</strong> training creates jobs and technical expertise within the barangay.</li>
+        <li><strong>Women’s participation:</strong> formal inclusion in water management committees.</li>
+        <li><strong>Social cohesion:</strong> shared resource management builds trust across the community.</li>
+      </ul>
+
+      <h3>10.5 Impact Metrics Summary</h3>
+      <div class="card-grid">
+        <div class="card">
+          <span class="metric-value">~1,000</span>
+          <h4>Beneficiaries</h4>
+          <p>200 families in the pilot barangay</p>
+        </div>
+        <div class="card">
+          <span class="metric-value">30–40%</span>
+          <h4>Health Impact</h4>
+          <p>Reduction in waterborne disease incidence</p>
+        </div>
+        <div class="card">
+          <span class="metric-value">20%</span>
+          <h4>Education Impact</h4>
+          <p>Improvement in school attendance</p>
+        </div>
+        <div class="card">
+          <span class="metric-value">100%</span>
+          <h4>Resilience Impact</h4>
+          <p>Water availability during declared disasters</p>
+        </div>
+        <div class="card">
+          <span class="metric-value">50+</span>
+          <h4>Community Engagement</h4>
+          <p>Residents trained in operation &amp; maintenance</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Environmental -->
+    <section id="environment">
+      <h2>11. Environmental Sustainability</h2>
+      <p>The program’s solar-hybrid design is deliberately chosen to minimize both operating cost and environmental footprint. By drawing power primarily from on-site solar arrays, the system cuts grid dependence and reduces greenhouse gas emissions by an estimated <strong>40–60%</strong> relative to grid-powered AWG alternatives.</p>
+      <ul>
+        <li>No extraction pressure on local aquifers, unlike conventional groundwater pumping.</li>
+        <li>Modular hardware designed for a 10–15 year service life, reducing equipment turnover and waste.</li>
+        <li>IoT monitoring supports predictive maintenance, extending component life and minimizing unnecessary part replacement.</li>
+        <li>Filtration waste (spent cartridges) will be collected and disposed of through a documented, centralized program rather than left to ad hoc household disposal.</li>
+      </ul>
+    </section>
+
+    <!-- 12. Risk Register -->
+    <section id="risks">
+      <h2>12. Consolidated Risk Register</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Risk</th>
+              <th>Mitigation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Technical</td>
+              <td>Reduced extraction efficiency below 50% relative humidity</td>
+              <td>Modular redundancy; buffer storage tanks; dry-season output modeling built into design</td>
+            </tr>
+            <tr>
+              <td>Operational</td>
+              <td>Maintenance lapses or untrained operator turnover</td>
+              <td>Structured operator training program; documented maintenance schedule; youth training pipeline</td>
+            </tr>
+            <tr>
+              <td>Financial</td>
+              <td>High upfront capital cost</td>
+              <td>Award grant funding; phased capital deployment; local government co-investment</td>
+            </tr>
+            <tr>
+              <td>Financial</td>
+              <td>Lower-than-projected household contributions</td>
+              <td>Tiered membership fees; government subsidy layer; 70% break-even threshold</td>
+            </tr>
+            <tr>
+              <td>Climate</td>
+              <td>Typhoon damage to installed units</td>
+              <td>Reinforced mounting and enclosures; insurance coverage; rapid-repair spare parts stock</td>
+            </tr>
+            <tr>
+              <td>Governance</td>
+              <td>Weak cooperative accountability</td>
+              <td>Transparent IoT reporting; quarterly public reporting to the barangay council</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 13. Governance -->
+    <section id="governance">
+      <h2>13. Governance and Organizational Capacity</h2>
+      <p>Project governance rests on three coordinated layers: a barangay-level water cooperative responsible for day-to-day operations and fee collection; a program management team responsible for technical oversight, IoT monitoring, and reporting; and a local government partnership providing regulatory support and co-investment.</p>
+      <ul>
+        <li><strong>Water Cooperative:</strong> elected resident committee, including formal representation for women, responsible for fee collection, dispute resolution, and operator supervision.</li>
+        <li><strong>Program Management Team:</strong> technical and finance staff responsible for installation quality, IoT data integrity, and Award reporting.</li>
+        <li><strong>Local Government Unit:</strong> co-investment, permitting, and integration with barangay disaster-preparedness planning.</li>
+      </ul>
+      <p>This structure is intended to keep decision-making and financial accountability close to the community it serves, while preserving the technical and reporting rigor the Award committee requires.</p>
+    </section>
+
+    <!-- 14. Expected Outcomes -->
+    <section id="outcomes">
+      <h2>14. Expected Outcomes</h2>
+      <ul>
+        <li>5,000 liters/day of clean drinking water delivered to the pilot barangay.</li>
+        <li>A fully documented, replicable model for community-scale AWG deployment across Southeast Asia.</li>
+        <li>Strengthened resilience against climate-related water shortages, validated through at least one full typhoon season of operating data.</li>
+        <li>Recognition as a scalable, evidence-based solution to global water scarcity challenges.</li>
+      </ul>
+    </section>
+
+    <!-- 15. Conclusion -->
+    <section id="conclusion">
+      <h2>15. Conclusion</h2>
+      <p>This project embodies the spirit of the Mohammed bin Rashid Al Maktoum Global Water Award: a technically credible, financially disciplined, and community-anchored response to water scarcity in one of its most solvable forms — high-humidity regions where the resource is, quite literally, in the air. It pairs proven filtration and solar technology with a governance model designed for durability, not dependency.</p>
+      <div class="highlight-box">
+        <p>With Award support, this initiative will move beyond a single pilot barangay to become a flagship, evidence-backed reference for climate-resilient community water supply — ready for replication across the Philippines and other humid tropical geographies facing the same structural water challenges.</p>
+      </div>
+    </section>
+
+    <!-- 16. Appendices note -->
+    <section id="appendices">
+      <h2>16. Appendices</h2>
+      <p>The following supporting materials are referenced in the full proposal submission:</p>
+      <ul>
+        <li><strong>Appendix A</strong> — Site Photographs and Community Maps</li>
+        <li><strong>Appendix B</strong> — Letters of Support</li>
+        <li><strong>Appendix C</strong> — Community Testimonials</li>
+        <li><strong>Appendix D</strong> — Organizational Chart and Team CVs</li>
+        <li><strong>Appendix E</strong> — Detailed Financial Model</li>
+        <li><strong>Appendix F</strong> — Environmental and Regulatory Compliance Documentation</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Mohammed bin Rashid Al Maktoum Global Water Award</h3>
+      <p>Community Atmospheric Water Generator (AWG) Initiative<br>
+      Proposal submitted by Romualdo Romeo Ortiz · 21 July 2026</p>
+      <p style="margin-top:1rem;">
+        <a href="mailto:dngrtz2000@gmail.com">dngrtz2000@gmail.com</a> · +63 997 561 3730
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" title="Back to top">↑</a>
+
+  <script>
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
+    const backToTop = document.getElementById('backToTop');
+
+    function onScroll() {
+      const scrollY = window.scrollY;
+      backToTop.classList.toggle('visible', scrollY > 400);
+
+      let current = '';
+      sections.forEach(section => {
+        const top = section.offsetTop - 80;
+        if (scrollY >= top) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+</body>
+</html>
